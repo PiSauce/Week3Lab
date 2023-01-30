@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Arithmetic Calculator</h1>
-        <form action="age" method="post">
+        <form action="arithmetic" method="post">
             First:<input type="tex" name="first" value="${first}"></br>
             Second:<input type="tex" name="second" value="${second}"></br>
             <input type="submit" value="+">
