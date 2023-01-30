@@ -3,15 +3,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Age Calculator</title>
+        <title>Arithmetic Calculator</title>
     </head>
     <body>
-        <h1>Age Calculator</h1>
+        <h1>Arithmetic Calculator</h1>
         <form action="age" method="post">
-            Enter your age:<input type="tex" name="age" value="${age}"></br>
+            First:<input type="tex" name="age" value="${age}"></br>
             <input type="submit" value="Age next birthday">
         </form>
-            <text></text>
-        <a href="arithmetic">Arithmetic Calculator</a>
+        </br>
+        Result:--
+        <a><a href="age">Age Calculator</a>
     </body>
 </html>
