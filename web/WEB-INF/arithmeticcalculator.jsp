@@ -10,7 +10,7 @@
         <form action="arithmetic" method="post">
             First:<input type="tex" name="first" value="${first}"></br>
             Second:<input type="tex" name="second" value="${second}"></br>
-            <input type="submit" value="+">
+            <input type="submit" name="+" value="+">
             <input type="submit" value="-">
             <input type="submit" value="*">
             <input type="submit" value="%">
