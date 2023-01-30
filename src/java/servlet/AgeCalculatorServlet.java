@@ -18,16 +18,16 @@ public class AgeCalculatorServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String age = request.getParameter("age"); 
-        request.setAttribute("age", age);
+        String ageStr = request.getParameter("age"); 
         
-        if (age == null || age.equals("")) {
-            getServletContext().getRequestDispatcher("/WEB_INF/agecalculator.jsp").forward(request, response);
+        if (ageStr == null || ageStr.equals("")) {
+            getServletContext().getRequestDispatcher("/WEB-INF/agecalculator.jsp").forward(request, response);
             return;
         }
         
         try{
-            int ageInt = Integer.parseInt(age);
+            int age = Integer.parseInt(ageStr);
+            request.setAttribute("age", age);
         } catch (NumberFormatException e) {
             getServletContext().getRequestDispatcher("/WEB_INF/agecalculator.jsp").forward(request, response);
             return;
