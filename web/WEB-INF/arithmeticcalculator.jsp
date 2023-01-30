@@ -11,9 +11,12 @@
             First:<input type="tex" name="first" value="${first}"></br>
             Second:<input type="tex" name="second" value="${second}"></br>
             <input type="submit" value="+">
+            <input type="submit" value="-">
+            <input type="submit" value="*">
+            <input type="submit" value="%">
         </form>
             
-        <p>Result: ${message="--"}</p>
+        <p>Result: ${message}</p>
         <a><a href="age">Age Calculator</a>
     </body>
 </html>
