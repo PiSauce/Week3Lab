@@ -50,11 +50,11 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
             } else if (type.equals("%")){
                 request.setAttribute("message", first%second);
             }
-            getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
-            return;
         } catch (NumberFormatException e) {
             request.setAttribute("message", "invalid");
-            
+        } catch (ArithmeticException e) {
+            request.setAttribute("message", "invalid");
+        } finally {
             getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
             return;
         }
