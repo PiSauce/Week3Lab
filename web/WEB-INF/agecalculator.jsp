@@ -3,13 +3,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Age Calculator</title>
     </head>
     <body>
         <h1>Age Calculator</h1>
-        <form action="getAge" method="post">
+        <form action="age" method="post">
             Enter your age:<input type="tex" name="age" value="${age}"></br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Age next birthday">
         </form>
     </body>
 </html>
