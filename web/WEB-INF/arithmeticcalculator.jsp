@@ -8,11 +8,12 @@
     <body>
         <h1>Arithmetic Calculator</h1>
         <form action="age" method="post">
-            First:<input type="tex" name="age" value="${age}"></br>
-            <input type="submit" value="Age next birthday">
+            First:<input type="tex" name="first" value="${first}"></br>
+            Second:<input type="tex" name="second" value="${second}"></br>
+            <input type="submit" value="+">
         </form>
-        </br>
-        Result:--
+            
+        <p>Result: ${message="--"}</p>
         <a><a href="age">Age Calculator</a>
     </body>
 </html>
